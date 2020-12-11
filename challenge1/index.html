@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript on Steriod</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInYear()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    
+    </div>
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        
+        <div class="flex-box-container-2">
+            <div>
+                <button class="btn btn-success" onclick="addCat()">Generate Cat</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-2" id="cat-box">
+            
+        </div>
+    
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        
+        <div id="flex-box-container-3">
+            
+            <div id="image1" class="images">
+                <img src="imgbin_rock-cartoon-png.png" alt="Rock" id="img1"onclick="click_image(2)">
+                <h3 id="user1"></h3>
+            </div>
+
+            <div id="image2" class="images">
+                <img src="imgbin_paper-png.png" alt="Paper" id="img2"onclick="click_image(3)">
+            </div>
+
+            <div id="image3" class="images">
+                <img src="pngkey.com-rock-paper-scissors-png-8162091.png" alt="" id="img3"  onclick="click_image(4)">
+                <h3 id="cpu"></h3>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2>Challenge 4: Change the Color of All Buttons!</h2>
+
+        <div class="flex-box-container-4">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColourChange(this)">
+                    <option value="random" >Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+        <div>
+            <h2 style="border-bottom: 0px;">Challenge 5: Blackjack</h2>
+            <h4 style="border-top: 0px; padding-top: 0px;" id="result">Let's Play!</h4>
+        </div>
+        
+        <div class="black-jack">
+            <div class="flex-box-container-5" style="padding: 0px;border: 0px;">
+                <div class="card-area" id="your-box">
+                    <h3 id="user_score">You: <span id="your-blackjack-result" class="scores">0</span></h3>
+                </div>
+                <div class="card-area" id="dealer-box">
+                    <h3 id="bot_score" >Dealer: <span id="bot-blackjack-result" class='scores'>0</span></h3>
+                </div>
+            </div>
+    
+            <div class="flex-box-container-1">
+                <div>
+                    <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button" onclick="yourCards(this)">Hit</button>
+                    <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button" onclick="botCards(this)">Stand</button>
+                    <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button" onclick="refreshGame()">Deal</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="flex-box-container-1">
+            <table style="border: 1px black solid;">
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="win">0</span></td>
+                    <td><span id="loss">0</span></td>
+                    <td><span id="draw">0</span></td>
+                </tr>
+            </table>
+            
+            <audio src="Cheering-SoundBible.com-1115515042.wav"></audio>
+            
+        </div>
+        
+    </div>
+
+    <script src="sample.js"></script>
+</body>
+</html>
